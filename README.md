@@ -11,18 +11,15 @@ README for RemoteControl.apk
 Communication using UDP. For use on the same WiFi network. 
 
 ***************************
-* Server ******************
-*        ******************
-***************************
+Server 
+
 Server begins in a stopped state. To start the server, press the start button. At this point, it will
 be listening for packets on port 4444 (arbitrarily chosen). If no packet is received within 10 seconds
 the server will timeout and need to be restarted. You can stop the server by pressing the stop button.
 
 
 ***************************
-* Client ******************
-*        ******************
-***************************
+Client
 To switch to Client mode, press menu and select the client. Configure the client by providing the IP
 that packets should be sent to. The server will display its current IP on the WiFi network for your convenience.
 When the server is started, buttons can be pressed and should toggle the buttons on the server. Move arrows will move
