@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RemoteControl</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Client">Client</string>
+    <string name="Move_Me">Move Me!</string>
+    <string name="My_IP">My IP</string>
+    <string name="ServerTitle">Server</string>
+    <string name="ServerStatusOnInit">Stopped</string>
+    <string name="ServerButtonStatusOnInit">Start</string>
+
+</resources>

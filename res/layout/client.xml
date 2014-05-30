@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/clientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="29dp"
+            android:onClick="onClick"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClick2"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="Client"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/ServerIPChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/ServerIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ServerIPChoose"
+            android:layout_alignBottom="@+id/ServerIPChoose"
+            android:layout_alignLeft="@+id/button1"
+            android:text="Server IP"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:onClick="onClick3"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/arrowDown"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/ServerIPChoose"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/arrow_up"
+            android:gravity="center_vertical"
+            android:onClick="onArrowDownClick"
+            android:rotation="180" />
+
+        <Button
+            android:id="@+id/arrowUp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/arrowRight"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/arrow_up"
+            android:gravity="center_vertical"
+            android:onClick="onArrowUpClick" />
+
+        <Button
+            android:id="@+id/arrowRight"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/arrowLeft"
+            android:layout_alignBottom="@+id/arrowLeft"
+            android:layout_alignLeft="@+id/button3"
+            android:background="@drawable/arrow_up"
+            android:gravity="center_vertical"
+            android:onClick="onArrowRightClick"
+            android:rotation="90" />
+
+        <Button
+            android:id="@+id/arrowLeft"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/arrowDown"
+            android:layout_alignLeft="@+id/ServerIP"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/arrow_up"
+            android:gravity="center_vertical"
+            android:onClick="onArrowLeftClick"
+            android:rotation="270" />
+
+    </RelativeLayout>
+
+</LinearLayout>
