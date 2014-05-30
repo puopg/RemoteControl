@@ -20,6 +20,7 @@ the server will timeout and need to be restarted. You can stop the server by pre
 
 ***************************
 Client
+
 To switch to Client mode, press menu and select the client. Configure the client by providing the IP
 that packets should be sent to. The server will display its current IP on the WiFi network for your convenience.
 When the server is started, buttons can be pressed and should toggle the buttons on the server. Move arrows will move
